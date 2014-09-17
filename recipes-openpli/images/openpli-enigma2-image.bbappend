@@ -1,6 +1,6 @@
 # addtional image features/packges for my custom image
 
-PR = "r11"
+PR = "r101"
 
 DEPENDS_append = " enigma2-skins "
 DEPENDS_append = " libav "

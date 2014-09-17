@@ -2,11 +2,7 @@ PR="r100"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
-SRC_URI_append_mx6 += " \
-		file://_001_change_to_fb1.patch \
-		file://_010_servicemp3_remove_dvbsink_find.patch \
-		file://_011_servicemp3_cast_len.patch \
-"
+SRC_URI_mx6 = "git://github.com/noone2k/openpli-enigma2.git"
 
 EXTRA_OECONF += " \
 		--with-gstversion=1.0 \
