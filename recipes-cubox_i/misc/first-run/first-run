@@ -1,0 +1,20 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          first-run
+# Required-Start:
+# Required-Stop:
+# Default-Start:     S
+# Default-Stop:
+# Short-Description: First-run, create home-part, some cleanups
+### END INIT INFO
+
+
+### install some prebuild ipkgs
+#if [ -d /home/root/preinstall ]; do
+#	opkg install /home/root/preinstall/*.ipk
+#	rm -rf /home/root/preinstall
+#fi
+
+
+### remove opkg
+opkg remove 3rd-party-feed-configs rpi-wiggle first-run

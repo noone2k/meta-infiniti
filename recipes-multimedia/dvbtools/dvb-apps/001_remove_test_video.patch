@@ -1,0 +1,10 @@
+--- a/test/Makefile	2014-09-01 15:47:31.705523806 +0200
++++ b/test/Makefile	2014-09-01 15:53:23.020738542 +0200
+@@ -20,7 +20,6 @@
+            test_vevent     \
+            test_video      \
+ 	   evtest	   \
+-	   video	   \
+ 	   szap2
+ 
+ .PHONY: all

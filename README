@@ -1,0 +1,64 @@
+Enigma² for Cubox-i/Hummingboard - pre pre pre alpha 0.0.0.0.1 :D
+
+
+Release Notes
+-------------
+This is a port of the famous Enigma2 System from Dream-Multimedia.
+Since it is now closed source and i've used an openpli fork,
+based on the old opensource and gpl'ed version from DMM.
+
+This piece of work was mainly tested on the cubox-i 4pro by Solidrun ( http://www.solid-run.com ).
+Minor tests were done on the Hummingboard i2ex.
+
+
+How to Setup
+------------
+f.ex. to build an environment in /development/hummingboard/openpli40
+
+$ mkdir -p /development/hummingboard/openpli40
+$ cd /development/hummingboard/openpli40
+$ git clone git://git.code.sf.net/p/openpli/openpli-oe-core
+$ cd openpli-oe-core
+$ make
+
+# edit site.conf and build/conf/local.conf to your needs ...
+
+# add meta-fsl-arm(-extra) and this layer
+$ git clone git://git.yoctoproject.org/meta-fsl-arm
+$ git clone https://github.com/dv1/meta-fsl-arm-extra.git
+$ git clone https://github.com/noone2k/meta-infiniti.git
+
+# edit build/conf/bblayers.conf and add the new cloned ones
+# BBLAYERS += "\
+#	meta-fsl-arm \
+#	meta-fsl-arm-extra \
+#	meta-infiniti \
+# "
+
+# to build an image run:
+$ MACHINE=cubox-i make image
+
+
+Whats Working 
+-------------
+ - Mediaplayer ( gstreamer 1.4 )
+ - Scan via DVB-Cards and the Linux-TV API ( only a usb dvb-t card testet )
+ - Internet Streaming ( MediaPortal as example included ... )
+
+Whats NOT Working
+-----------------
+ - A/V in LIVE-TV ( see todo )
+ - alot more :D
+
+Other Notes:
+------------
+ - On the first boot the parition  "/dev/mmcblk0p2", will be resized to fit the sdcard ... 
+	( proper credits to rpi-wiggle ... and ... please wait few minutes ... ;) )
+ - actually all is running in 720p 
+	( A/V on fb0 and OSD on fb1 )
+ - for audio is alsa card 1 in use 
+	( HDMI on cb, hb needs maybe card 2, else spdif is used, see "/etc/asound.conf" )
+ - to use your own remote, have a look at "/usr/bin/enigma2_pre_start.sh" 
+	( see how to find and load the right keymap - hint: ir-keytable )
+
+

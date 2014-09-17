@@ -1,0 +1,30 @@
+--- a/lib/service/servicemp3.cpp	2014-09-07 19:15:11.715101919 +0200
++++ b/lib/service/servicemp3.cpp	2014-09-07 19:23:58.819516660 +0200
+@@ -1543,22 +1543,22 @@
+ #if GST_VERSION_MAJOR < 1
+ 					audioSink = GST_ELEMENT_CAST(gst_iterator_find_custom(children, (GCompareFunc)match_sinktype, (gpointer)"GstDVBAudioSink"));
+ #else
+-					if (gst_iterator_find_custom(children, (GCompareFunc)match_sinktype, &element, (gpointer)"GstDVBAudioSink"))
++					/*if (gst_iterator_find_custom(children, (GCompareFunc)match_sinktype, &element, (gpointer)"GstDVBAudioSink"))
+ 					{
+ 						audioSink = g_value_dup_object(&element);
+ 						g_value_unset(&element);
+-					}
++					}*/
+ #endif
+ 					gst_iterator_free(children);
+ 					children = gst_bin_iterate_recurse(GST_BIN(m_gst_playbin));
+ #if GST_VERSION_MAJOR < 1
+ 					videoSink = GST_ELEMENT_CAST(gst_iterator_find_custom(children, (GCompareFunc)match_sinktype, (gpointer)"GstDVBVideoSink"));
+ #else
+-					if (gst_iterator_find_custom(children, (GCompareFunc)match_sinktype, &element, (gpointer)"GstDVBVideoSink"))
++					/*if (gst_iterator_find_custom(children, (GCompareFunc)match_sinktype, &element, (gpointer)"GstDVBVideoSink"))
+ 					{
+ 						videoSink = g_value_dup_object(&element);
+ 						g_value_unset(&element);
+-					}
++					}*/
+ #endif
+ 					gst_iterator_free(children);
+ 
+

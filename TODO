@@ -1,0 +1,15 @@
+* cleanup
+	- remove old gst0.10 components
+
+* rewrite/rework
+	- load rc keymaps ( delayed or wait for ir-driver settlement )
+	- extend stb-faker modul ( procfs ) to emulate or map the required stb/e2-interface.
+		* a/v settings
+			- volume
+			- hdmi-modes selection ( 720/1080 w. i||p with different framerates ( 29.x/30/50/60 )
+			- scaler settings ( up/down and types, if possible )
+
+* live TV
+	- rewrite decoder.cpp ( enigma2 ) to use software ts demuxer
+		* maybe gstreamer, since we already use it as mediaplayer framework
+
