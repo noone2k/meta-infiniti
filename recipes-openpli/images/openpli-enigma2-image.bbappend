@@ -46,15 +46,16 @@ IMAGE_INSTALL += " \
 	enigma2-plugin-skins-dmconcinnity-hd \
 	enigma2-plugin-skins-dmm-hd \
 	enigma2-plugin-skins-dreammm-hd \
-	enigma2-plugin-extensions-mytube \
-	enigma2-plugin-dirtylion-navibar \
-	enigma2-plugin-vali-dreamexplorer \
-	enigma2-plugin-extensions-mediaportal \
 	python-mechanize \
 	python-robotparser \
 	python-html \
 	python-gdata \
 "
+### temp remove
+# enigma2-plugin-extensions-mytube 
+# enigma2-plugin-dirtylion-navibar
+# enigma2-plugin-vali-dreamexplorer
+# enigma2-plugin-extensions-mediaportal
 
 ### rc / ir / input / event / support
 IMAGE_INSTALL += " \
