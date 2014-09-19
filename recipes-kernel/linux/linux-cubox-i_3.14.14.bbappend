@@ -2,7 +2,7 @@ PR="r101"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
-SRCREV = "06c3dc6096ea15f146daa174d1efaf822c760321"
+SRCREV = "4354226e6463d0e4bdeb1dd24767d664f75a0222"
 
 SRC_URI_append_mx6 += " \
                 file://_defconfig_add_firmware.patch \

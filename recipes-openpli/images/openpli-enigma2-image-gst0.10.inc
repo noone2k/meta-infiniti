@@ -1,4 +1,3 @@
-
 ### gst 0.10
 IMAGE_INSTALL += " \
         gst-fsl-plugin \
