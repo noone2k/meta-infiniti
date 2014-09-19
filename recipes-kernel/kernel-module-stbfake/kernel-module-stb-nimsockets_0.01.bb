@@ -1,7 +1,7 @@
 # Copyright (C) 2013 infiniti
 SUMMARY = "STB-FAKE nimsockets module"
 LICENSE = "none"
-LIC_FILES_CHKSUM = "file://Makefile;md5=d63106dda085096e9ba68dd3677a987a"
+LIC_FILES_CHKSUM = "file://Makefile;md5=8a7f149c3705b8a11c5b3c062cc314fe"
 
 PR = "r0"
 

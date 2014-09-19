@@ -1,7 +1,7 @@
 # Copyright (C) 2013 infiniti
 SUMMARY = "STB-FAKE procfs module"
 LICENSE = "none"
-LIC_FILES_CHKSUM = "file://Makefile;md5=76eb945239233d045af99c1fd767472d"
+LIC_FILES_CHKSUM = "file://Makefile;md5=6c893dc2fac3542b98a1e5800bdae169"
 
 PR = "r1"
 

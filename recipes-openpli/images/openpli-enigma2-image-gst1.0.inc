@@ -9,7 +9,6 @@ IMAGE_INSTALL += " \
 	gstreamer1.0-libav \
 	gstreamer1.0-omx \
 	gstreamer1.0-plugins-bad \
-        gstreamer1.0-plugins-bad-meta \
 	gstreamer1.0-plugins-bad-accurip \
 	gstreamer1.0-plugins-bad-adpcmdec \
 	gstreamer1.0-plugins-bad-adpcmenc \
@@ -56,7 +55,6 @@ IMAGE_INSTALL += " \
 	gstreamer1.0-plugins-bad-pnm \
 	gstreamer1.0-plugins-bad-rawparse \
 	gstreamer1.0-plugins-bad-removesilence \
-	gstreamer1.0-plugins-bad-rfbsrc \
         gstreamer1.0-plugins-bad-rtmp \
 	gstreamer1.0-plugins-bad-sbc \
 	gstreamer1.0-plugins-bad-sdpelem \
@@ -99,7 +97,6 @@ IMAGE_INSTALL += " \
 	gstreamer1.0-plugins-base-volume \
 	gstreamer1.0-plugins-base-vorbis \
 	gstreamer1.0-plugins-good \
-        gstreamer1.0-plugins-good-meta \
 	gstreamer1.0-plugins-good-alaw \
 	gstreamer1.0-plugins-good-alpha \
 	gstreamer1.0-plugins-good-alphacolor \
@@ -109,7 +106,6 @@ IMAGE_INSTALL += " \
 	gstreamer1.0-plugins-good-auparse \
 	gstreamer1.0-plugins-good-autodetect \
 	gstreamer1.0-plugins-good-avi \
-	gstreamer1.0-plugins-good-cairo \
 	gstreamer1.0-plugins-good-cutter \
 	gstreamer1.0-plugins-good-debug \
 	gstreamer1.0-plugins-good-deinterlace \
@@ -175,10 +171,14 @@ IMAGE_INSTALL += " \
 "
 
 ### gst1.0 tmp deact
+#        gstreamer1.0-plugins-bad-meta 
 #        gstreamer1.0-plugins-bad-bluez 
 #        gstreamer1.0-plugins-bad-eglglessink 
 #        gstreamer1.0-plugins-bad-mfc 
+#        gstreamer1.0-plugins-bad-rfbsrc
 #        gstreamer1.0-plugins-base-ximagesink 
 #        gstreamer1.0-plugins-base-xvimagesink 
 #        gstreamer1.0-plugins-good-ximagesrc 
+#        gstreamer1.0-plugins-good-meta 
+#        gstreamer1.0-plugins-good-cairo 
 

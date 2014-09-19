@@ -25,7 +25,6 @@ IMAGE_INSTALL += " \
 	libclc-mx6  \
 	libegl-mx6 \
 	libgal-mx6 \
-	libgl-mx6 \
 	libgles-mx6 \
 	libgles2-mx6 \
 	libglslc-mx6 \
@@ -40,7 +39,7 @@ IMAGE_INSTALL += " \
 # gpu-viv-bin-mx6q
 # kernel-firmware-sdma-imx6q 
 # libvivante-dri-mx6 
-
+# libgl-mx6 
 
 ### enigma2 related / skins / plugins / python
 IMAGE_INSTALL += " \
