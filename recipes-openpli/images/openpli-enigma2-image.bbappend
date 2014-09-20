@@ -1,6 +1,6 @@
 # addtional image features/packges for my custom image
 
-PR = "r101"
+PR = "r102"
 
 DEPENDS_append = " enigma2-skins "
 DEPENDS_append = " libav "
@@ -50,6 +50,7 @@ IMAGE_INSTALL += " \
 	python-robotparser \
 	python-html \
 	python-gdata \
+	enigma2-plugin-extensions-iptvlistupdater \
 "
 ### temp remove
 # enigma2-plugin-extensions-mytube 
@@ -80,7 +81,4 @@ IMAGE_INSTALL += " \
 
 ### gst 1.0 
 include openpli-enigma2-image-gst1.0.inc
-#include openpli-enigma2-image-gst0.10-remove.inc
 
-### gst 0.10
-#include openpli-enigma2-image-gst0.10.inc
