@@ -13,8 +13,9 @@ lsmod | grep -q stb_nimsockets || modprobe stb_nimsockets
 /usr/bin/create_nimsockets
 
 ### ir
+lsmod | grep -q gpio_ir_recv || modprobe gpio-ir-recv
+RCNAM=gpio_ir_recv
 RCMAP=hauppauge
-RCNAM=em28xx
 RCDEV=`find /sys/class/rc/rc*/ -name name -exec grep -l $RCNAM {} \; | sed -e 's/.*rc\///' -e 's/\/.*//'`
 ir-keytable -s $RCDEV -c -w /lib/udev/rc_keymaps/$RCMAP
 
