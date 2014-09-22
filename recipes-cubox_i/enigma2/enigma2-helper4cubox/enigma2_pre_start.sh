@@ -4,8 +4,7 @@
 fbset -fb /dev/fb0 "1280x720-50p"
 fbset -fb /dev/fb1 "1280x720-50p"
 echo 0 > /sys/class/graphics/fb1/blank
-/usr/bin/fbalpha 1 g0 128 0xffffffff
-/usr/bin/fbalpha 1 g1 128 0xffffffff
+/usr/bin/fbalpha 1 l1 128
 
 ### stb related
 lsmod | grep -q stb_procfs     || modprobe stb_procfs
