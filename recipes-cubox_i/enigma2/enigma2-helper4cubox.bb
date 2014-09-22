@@ -5,7 +5,7 @@ SECTION = "enigma2/extensions"
 LICENSE = "CLOSED"
 PV = "0.1"
 PRIORITY = "optional"
-PR = "r3"
+PR = "r4"
 
 SRC_URI = "	file://create_nimsockets \
 		file://enigma2_pre_start.sh \
