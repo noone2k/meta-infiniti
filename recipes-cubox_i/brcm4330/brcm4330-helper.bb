@@ -5,12 +5,12 @@ SECTION = "enigma2/extensions"
 LICENSE = "CLOSED"
 PV = "0.1"
 PRIORITY = "optional"
-PR = "r2"
+PR = "r3"
+
+DEPENDS = "kernel-firmware-brcm"
 
 SRC_URI = "	file://brcm4330_default \
 		file://brcm4330-patch \
-		file://bcm4329.hcd \
-		file://bcm4330.hcd \
 		file://brcm_patchram_plus \
 "
 
@@ -29,9 +29,6 @@ do_install () {
 
         install -d "${D}/etc/default"
         install -m 644 "${S}/brcm4330_default" "${D}/etc/default/brcm4330"
-	install -d "${D}/lib/firmware/brcm"
-	install -m 644 "${S}/bcm4329.hcd" "${D}/lib/firmware/brcm/"
-        install -m 644 "${S}/bcm4330.hcd" "${D}/lib/firmware/brcm/"
 }
 
 FILES_${PN} += "/"

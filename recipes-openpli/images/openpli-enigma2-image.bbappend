@@ -34,6 +34,8 @@ IMAGE_INSTALL += " \
 	libvivante-mx6 \
 	linux-firmware-bcm4330 \
 	brcm4330-helper \
+	kernel-firmware-brcm \
+	kernel-firmware-drxk \
 "
 ### temp remove
 # gpu-viv-bin-mx6q
